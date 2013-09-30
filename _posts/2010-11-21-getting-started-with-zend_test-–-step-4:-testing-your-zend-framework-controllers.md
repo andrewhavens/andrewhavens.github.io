@@ -2,7 +2,7 @@
 layout: post
 title: "Getting started with Zend_Test – Step 4: Testing your Zend Framework Controllers"
 date: 2010-11-21
-permalink: /posts/9/getting-started-with-zend_test-–-step-4:-testing-your-zend-framework-controllers
+permalink: /posts/9/getting-started-with-zend_test-step-4-testing-your-zend-framework-controllers
 ---
 Finally! We can start testing our Controllers! I will assume that your application has the same directory structure as the Zend Framework Quick Start tutorial. Here’s an overview of what our directory structure will look like:
 

@@ -2,7 +2,7 @@
 layout: post
 title: "How to install Pygments (syntax highlighter) using Homebrew"
 date: 2011-07-01
-permalink: /posts/13/how-to-install-pygments-(syntax-highlighter)-using-homebrew
+permalink: /posts/13/how-to-install-pygments-syntax-highlighter-using-homebrew
 ---
 Recently, I found a Ruby Gem that I wanted to install and try out, but found out that [Pygments][1] was a dependency that I need to install first. I immediately tried to see if I could install it with [Homebrew (the best package manager ever, for the Mac)][2]...
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Getting started with Zend_Test – Step 1: Setting up PEAR on Mac OS X 10.5 (Leopard)"
 date: 2010-11-18
-permalink: /posts/6/getting-started-with-zend_test-–-step-1:-setting-up-pear-on-mac-os-x-10.5-(leopard)
+permalink: /posts/6/getting-started-with-zend_test-step-1-setting-up-pear-on-mac-os-x-10.5-leopard
 ---
 **Question:** How do I get started using Zend_Test? What is the process necessary to start using Zend_Test for testing my Zend Framework application?
 

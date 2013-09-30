@@ -2,7 +2,7 @@
 layout: post
 title: "Zend Framework: How to specify which view script a controller should render"
 date: 2012-10-04
-permalink: /posts/22/zend-framework:-how-to-specify-which-view-script-a-controller-should-render
+permalink: /posts/22/zend-framework-how-to-specify-which-view-script-a-controller-should-render
 ---
 Need to render a different view script than the default? There are actually a few different ways to do it, depending on the situation. Given the following controller:
 

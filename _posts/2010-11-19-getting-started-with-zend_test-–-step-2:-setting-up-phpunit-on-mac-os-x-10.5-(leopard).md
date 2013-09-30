@@ -2,7 +2,7 @@
 layout: post
 title: "Getting started with Zend_Test – Step 2: Setting up PHPUnit on Mac OS X 10.5 (Leopard)"
 date: 2010-11-19
-permalink: /posts/7/getting-started-with-zend_test-–-step-2:-setting-up-phpunit-on-mac-os-x-10.5-(leopard)
+permalink: /posts/7/getting-started-with-zend_test-step-2-setting-up-phpunit-on-mac-os-x-10.5-leopard
 ---
 **Question:** How do I get started using Zend_Test? What is the process necessary to start using Zend_Test for testing my Zend Framework application?
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Getting started with Zend_Test – Step 3: Make sure PHPUnit is ready for testing"
 date: 2010-11-20
-permalink: /posts/8/getting-started-with-zend_test-–-step-3:-make-sure-phpunit-is-ready-for-testing
+permalink: /posts/8/getting-started-with-zend_test-step-3-make-sure-phpunit-is-ready-for-testing
 ---
 Now that we’ve installed PEAR and PHPUnit, we can verify that PHPUnit is working correctly by writing our first test.
 

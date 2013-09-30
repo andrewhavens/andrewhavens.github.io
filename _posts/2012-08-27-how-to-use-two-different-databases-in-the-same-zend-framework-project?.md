@@ -2,7 +2,7 @@
 layout: post
 title: "How to use two different databases in the same Zend Framework project?"
 date: 2012-08-27
-permalink: /posts/17/how-to-use-two-different-databases-in-the-same-zend-framework-project?
+permalink: /posts/17/how-to-use-two-different-databases-in-the-same-zend-framework-project
 ---
 Sometimes you need to use two different databases in a single project. Using two databases in a single Zend Framework project should be a pretty simple and straight-forward thing. However, this turned out to be a bit of a wild goose chase in order to figure out the Zend Framework specific syntax.
 
