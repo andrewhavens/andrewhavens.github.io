@@ -14,9 +14,9 @@ layout: default
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       var disqus_shortname = 'andrewhavensblog';
-      var disqus_identifier = 'post_<%= @post.id %>';
-      var disqus_url = 'http://www.andrewhavens.com/posts/<%= @post.id %>/<%= @post.slug %>';
-      var disqus_developer = 1; // developer mode: 1 is on, 0 is off
+      var disqus_identifier = '{{ page.permalink }}';
+      var disqus_url = 'http://www.andrewhavens.com{{ page.permalink }}';
+      var disqus_developer = 0; // developer mode: 1 is on, 0 is off
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
