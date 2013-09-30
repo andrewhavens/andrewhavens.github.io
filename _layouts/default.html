@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-8821246-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </head>
+  <body>
+
+    <div class="header">
+    </header>
+
+    <div class="site">
+      <div class="header">
+        <a href="/"><img src="/img/andrew-havens-logo.png" alt="Andrew Havens" width="275"></a>
+        <!-- <h1 class="title"><a href="/">{{ site.name }}</a></h1> -->
+        <!-- <a class="extra" href="/">home</a> -->
+        <span class="tagline">Ruby Developer</span>
+<!--         <nav>
+          <a href="/">Blog</a>
+        </nav> -->
+      </div>
+
+      {{ content }}
+
+      <div class="footer">
+        <p>
+          <a href="https://github.com/andrewhavens">GitHub</a> &bull;
+          <a href="https://twitter.com/misbehavens">Twitter</a> &bull;
+          <a href="http://www.linkedin.com/in/andrewhavens">LinkedIn</a> &bull;
+          <a href="mailto:email@andrewhavens.com">Email</a>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
