@@ -82,7 +82,7 @@ What you will need to learn:
 
 * How to determine code coverage
 
-## Step 7: Find a bug to fix or a feature to contribute to contribute
+## Step 7: Find a bug to fix, or a feature to contribute
 
 Start by checking the project's issue tracker. Create a branch and submit a pull request.
 
