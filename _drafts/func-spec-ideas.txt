@@ -1,0 +1,58 @@
+
+I concur that we should spend more time documenting things up front. I think it saves time in the long run by helping engineering be more productive and prevent unnecessary "change requests". However, I also think we need to strike a balance between too minimal and too verbose. My biggest criticism of the style described in the guide document is that it seems to describe the same functionality in multiple places, resulting in duplication and increased maintainability. I think the intention is to provide a high-level overview, then to gradually introduce the complexities of each feature. The problem occurs when a feature described does not meet the business need and needs to be changed. It will need to be updated in multiple places, which can easily be missed. A feature described may end up with a conflicting description in another part of the document. Also, I think the reader may assume that something is documented in more detail in another section, but may not be adequately documented. Let's take an example:
+
+Views/Screens:
+Landing (Pre-login)
+Forgot Password
+Forgot Password Confirmation
+User Stories, View Behaviors:
+Landing Page
+As a user, I want to be able to reset my password.
+User Stories, System Behaviors:
+Email
+As a user, I want to receive an email when I reset my password
+Functional Description, View Behaviors:
+Landing Page
+As a user, I want to be able to reset my password.
+The landing page has a link labeled "Forgot Password?"
+I click the forgot password link
+…
+Functional Description, System Behaviors:
+Email
+As a user, I want to receive an email when I reset my password
+After submitting the forgot password form, the password reset email should be sent
+The email should come from noreply@myapp.com
+The email should be sent to the address specified in the form
+
+This example may be too trivial, but I think it proves my point. The functionality is described in many different places. Related functionality is split into separate sections (filling out the form vs. sending the email). As the functional spec becomes more verbose, it becomes harder to use (more pages to scroll/reference for a single feature). As the length of the document increases, there may be a tendency to be more terse and actually describe less, or even forget to be documented in their respective areas. This may be more of a problem on large greenfield projects, but this might be solved by breaking it into smaller functional specs and linked to from the main functional spec document. 
+
+I think the document can be rewritten in a way that achieves the same level of detail while also achieving easier maintainability and reducing ambiguity. First of all, I think user stories need to be grouped by the role. This makes it easier to draw the line between admin-only features and normal user features.
+
+User Stories:
+
+As a user, I want to be able to reset my password [add the business reason which makes this feature necessary] because if I forget my password and can't reset it, I may not return to the site, resulting in lost sales
+Getting to the Forgot Password page
+The Forgot Password page is accessible from the following pages:
+"Forgot Password" link under the "Quick Login" drop down in the header
+"Forgot Password" link under the login form on the Login page
+Scenario: Entering a valid email
+Given I already have a user account
+I submit the Forgot Password form with my email address
+I see a message that an email was sent and I receive an email which contains a link to reset my password
+When I click the link, it takes me to the Password Reset page
+I enter my new password, and see that my password has been updated
+Then I can log in with my new email
+Scenario: Entering an invalid email
+I submit the Forgot Password form with an email address of a nonexistent user
+I see a message that a user with that email does not exist
+This has the advantage of keeping all "password reset" related features together and enumerates all the areas where this functionality should be accessible.
+
+I think the ideal COPIOUS workflow should be:
+As a team of strategists, designers, engineers, and client stake holders, begin the project by writing the functional/behavioral spec which contains the user stories which describe the business requirements. This will lead the design and make sure that the requirements are understood by everyone.
+Design work begins by creating wireframes/assets
+The spec is updated based on requirements that have changed due to discovery in design process
+Each user story is updated with a link to the wireframes/assets that were created.
+Any additional engineering specific requirements are documented.
+Engineering work can begin now that all requirements and design documents have been completed.
+Engineering work can easily begin with Test-driven development because user stories were written in a way that can easily translate into test specs.
+Features are complete when tests are passing.
