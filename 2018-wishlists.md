@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: plain
 ---
 
 # 2018 Wishlists
