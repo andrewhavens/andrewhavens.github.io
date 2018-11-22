@@ -25,3 +25,6 @@ Examples of declarative cucumber features:
 
 Counter-arguments to the following posts:
 * https://about.futurelearn.com/blog/how-we-write-readable-feature-tests-with-rspec/?utm_source=rubyweekly&utm_medium=email
+
+
+http://mixandgo.com/blog/7-steps-to-better-cucumber-tests?utm_source=rubyweekly&utm_medium=email
